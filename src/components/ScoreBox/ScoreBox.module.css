@@ -1,0 +1,13 @@
+.position {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  width: 311px;
+  height: 96px;
+  left: 32px;
+  top: 32px;
+  background-color: transparent;
+  text-align: center;
+  border: solid 2px hsl(217, 16%, 45%);
+  border-radius: 5px;
+}

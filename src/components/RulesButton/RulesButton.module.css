@@ -1,0 +1,12 @@
+.position {
+  position: absolute;
+  width: 128px;
+  height: 40px;
+  left: 124px;
+  top: 654px;
+  border: solid 1px hsl(217, 16%, 45%);
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  line-height: 40px;
+}
