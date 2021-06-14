@@ -1,0 +1,41 @@
+.rules {
+  background: white;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+.rules_image {
+  position: absolute;
+  width: 311px;
+  height: 305px;
+  left: 33px;
+  top: 226px;
+}
+.rules_text {
+  position: absolute;
+  width: 85px;
+  height: 32px;
+  left: 145px;
+  top: 95px;
+
+  font-family: Barlow Semi Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 32px;
+  /* identical to box height, or 100% */
+
+  color: #3b4262;
+}
+.close_button {
+  position: absolute;
+
+  height: 24px;
+  left: 180.09px;
+  top: 610.97px;
+}
