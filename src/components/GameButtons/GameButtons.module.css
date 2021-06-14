@@ -1,12 +1,108 @@
 .lizard {
   position: absolute;
-  width: 96px;
-  height: 97px;
-  left: 60px;
-  top: 390px;
+  width: 50px;
+  height: 50px;
+  left: 90px;
+  top: 430px;
   width: 10%;
   height: 40px;
-  background: white;
-  padding: 30px;
-  clip-path: circle(50% at 50% 50%);
+  background-image: linear-gradient(#dadada, #f3f3f3);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  border: solid 10px #834ee3;
+  z-index: 200;
+  filter: drop-shadow(0px 5px #5f37a8);
+  box-shadow: inset 0 4px 0 0 #babfd4;
+}
+.lizard {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 90px;
+  top: 430px;
+  width: 10%;
+  height: 40px;
+  background-image: linear-gradient(#dadada, #f3f3f3);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  border: solid 10px #834ee3;
+  z-index: 200;
+  filter: drop-shadow(0px 5px #5f37a8);
+  box-shadow: inset 0 4px 0 0 #babfd4;
+}
+.paper {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 30px;
+  top: 300px;
+  width: 10%;
+  height: 40px;
+  background-image: linear-gradient(#dadada, #f3f3f3);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  border: solid 10px #4664f4;
+  z-index: 200;
+  filter: drop-shadow(0px 5px #2a45c2);
+  box-shadow: inset 0 4px 0 0 #babfd4;
+}
+.rock {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 90px;
+  top: 430px;
+  width: 10%;
+  height: 40px;
+  background-image: linear-gradient(#dadada, #f3f3f3);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  border: solid 10px #db2e4d;
+  z-index: 200;
+  filter: drop-shadow(0px 5px #9d1634);
+  box-shadow: inset 0 4px 0 0 #babfd4;
+}
+.scissors {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 150px;
+  top: 200px;
+  width: 10%;
+  height: 40px;
+  background-image: linear-gradient(#dadada, #f3f3f3);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  border: solid 10px #eb9f0e;
+  z-index: 200;
+  filter: drop-shadow(0px 5px #c76c1b);
+  box-shadow: inset 0 4px 0 0 #babfd4;
+}
+.spock {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 30px;
+  top: 300px;
+  width: 10%;
+  height: 40px;
+  background-image: linear-gradient(#dadada, #f3f3f3);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  border: solid 10px #3fb7cd;
+  z-index: 200;
+  filter: drop-shadow(0px 5px #2d8dab);
+  box-shadow: inset 0 4px 0 0 #babfd4;
 }

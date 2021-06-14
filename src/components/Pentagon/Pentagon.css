@@ -1,18 +1,21 @@
 .hex {
   background-color: transparent;
   position: absolute;
-  width: 230px;
-  height: 120px;
-  left: 70px;
-  top: 300px;
+  width: 150px;
+  height: 240px;
+  left: 112.5px;
+  top: 260px;
   mix-blend-mode: normal;
   opacity: 0.2;
-  border-right: 15px solid #000000;
-  border-left: 15px solid #000000;
+
+  border-bottom: 15px solid #000000;
+
   box-sizing: border-box;
 }
 .hex .corner-1,
-.hex .corner-2 {
+.hex .corner-2,
+.hex .corner-3,
+.hex .corner-4 {
   position: absolute;
   top: 0;
   left: 0;
@@ -26,23 +29,36 @@
 
 .hex .corner-1 {
   z-index: -1;
-  transform: rotate(60deg);
+  transform: rotate(70deg);
+  bottom: 120px;
 
-  border-right: 15px solid #000000;
-  border-left: 15px solid #000000;
+  border-bottom: 15px solid #000000;
   box-sizing: border-box;
 }
 
 .hex .corner-2 {
-  transform: rotate(-60deg);
+  transform: rotate(-70deg);
 
-  border-right: 15px solid #000000;
-  border-left: 15px solid #000000;
+  border-bottom: 15px solid #000000;
+  box-sizing: border-box;
+}
+.hex .corner-3 {
+  transform: rotate(-140deg);
+
+  border-bottom: 15px solid #000000;
+  box-sizing: border-box;
+}
+.hex .corner-4 {
+  transform: rotate(140deg);
+
+  border-bottom: 15px solid #000000;
   box-sizing: border-box;
 }
 
 .hex .corner-1:before,
-.hex .corner-2:before {
+.hex .corner-2:before,
+.hex .corner-3:before,
+.hex .corner-4:before {
   width: 173px;
   height: 173px;
   content: '';
@@ -63,5 +79,13 @@
 
 .hex .corner-2:before {
   transform: rotate(60deg) translate(-48px, -11px);
+  bottom: 0;
+}
+.hex .corner-3:before {
+  transform: rotate(-120deg) translate(-48px, -11px);
+  bottom: 0;
+}
+.hex .corner-4:before {
+  transform: rotate(90deg) translate(-48px, -11px);
   bottom: 0;
 }
