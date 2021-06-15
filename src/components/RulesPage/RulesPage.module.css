@@ -39,3 +39,18 @@
   left: 180.09px;
   top: 610.97px;
 }
+
+@media (min-width: 768px) {
+  .rules_image {
+    left: 33%;
+    top: 25%;
+  }
+  .rules_text {
+    left: 43%;
+    top: 10%;
+  }
+  .close_button {
+    left: 46%;
+    top: 90%;
+  }
+}

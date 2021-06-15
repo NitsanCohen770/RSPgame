@@ -11,3 +11,13 @@
   border: solid 2px hsl(217, 16%, 45%);
   border-radius: 5px;
 }
+@media (min-width: 768px) {
+  .position {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    min-width: 40vw;
+    margin-top: 20px;
+  }
+}

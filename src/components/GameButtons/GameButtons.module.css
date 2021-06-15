@@ -8,6 +8,7 @@
   z-index: 200;
   filter: drop-shadow(0px 5px #5f37a8);
   box-shadow: inset 0 4px 0 0 #babfd4;
+  cursor: pointer;
 }
 .lizard_pick {
   position: absolute;
@@ -70,6 +71,7 @@
   z-index: 200;
   filter: drop-shadow(0px 5px #2a45c2);
   box-shadow: inset 0 4px 0 0 #babfd4;
+  cursor: pointer;
 }
 .paper_pick {
   position: absolute;
@@ -90,6 +92,7 @@
   z-index: 200;
   filter: drop-shadow(0px 5px #9d1634);
   box-shadow: inset 0 4px 0 0 #babfd4;
+  cursor: pointer;
 }
 .rock_pick {
   position: absolute;
@@ -110,6 +113,7 @@
   z-index: 200;
   filter: drop-shadow(0px 5px #c76c1b);
   box-shadow: inset 0 4px 0 0 #babfd4;
+  cursor: pointer;
 }
 .scissors_pick {
   position: absolute;
@@ -130,6 +134,7 @@
   z-index: 200;
   filter: drop-shadow(0px 5px #2d8dab);
   box-shadow: inset 0 4px 0 0 #babfd4;
+  cursor: pointer;
 }
 
 .spock_pick {
@@ -142,8 +147,51 @@
   height: 40px;
 }
 
-.chosen_player {
-}
+@media (min-width: 768px) {
+  .lizard_pick {
+    width: 60px;
+    left: 38%;
+    top: 80%;
+    height: 60px;
+  }
+  .paper_pick {
+    width: 60px;
+    left: 59%;
+    top: 50%;
+    height: 60px;
+  }
+  .rock_pick {
+    width: 60px;
+    left: 55%;
+    top: 80%;
+    height: 60px;
+  }
+  .scissors_pick {
+    width: 60px;
+    left: 46%;
+    top: 30%;
+    height: 60px;
+  }
+  .spock_pick {
+    width: 60px;
+    left: 33%;
+    top: 50%;
+    height: 60px;
+  }
+  .player_game__over {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 20%;
+    top: 50%;
+  }
 
-.chosen_home {
+  .house_game__over {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: 20%;
+    top: 50%;
+    pointer-events: none;
+  }
 }

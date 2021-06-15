@@ -11,3 +11,13 @@
   line-height: 40px;
   cursor: pointer;
 }
+
+@media (min-width: 768px) {
+  .position {
+    right: 2%;
+    top: 100%;
+
+    margin-left: auto;
+    margin-bottom: 10px;
+  }
+}

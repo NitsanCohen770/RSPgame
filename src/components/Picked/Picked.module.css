@@ -23,3 +23,18 @@
 
   border-radius: 50%;
 }
+
+@media (min-width: 768px) {
+  .picked {
+    left: 20%;
+    top: 400px;
+    width: 61%;
+  }
+  .house_game__loading {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 20%;
+    top: 50%;
+  }
+}

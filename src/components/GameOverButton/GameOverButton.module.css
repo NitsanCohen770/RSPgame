@@ -36,3 +36,10 @@
   color: #3b4262;
   cursor: pointer;
 }
+
+@media (min-width: 768px) {
+  .position {
+    left: 40%;
+    bottom: 30%;
+  }
+}

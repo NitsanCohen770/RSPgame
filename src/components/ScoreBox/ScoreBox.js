@@ -5,9 +5,11 @@ import Logo from '../Logo/Logo';
 import ScoreCard from '../ScoreCard/ScoreCard';
 const ScoreBox = () => {
   return (
-    <div className={position}>
-      <Logo />
-      <ScoreCard />
+    <div>
+      <div className={position}>
+        <Logo />
+        <ScoreCard />
+      </div>
     </div>
   );
 };
