@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import './Pentagon.css';
 const Pentagon = () => {
   return (
-    <div class="hex">
-      <div class="corner-1"></div>
-      <div class="corner-2"></div>
-      <div class="corner-3"></div>
-      <div class="corner-4"></div>
+    <div className="hex">
+      <div className="corner-1"></div>
+      <div className="corner-2"></div>
+      <div className="corner-3"></div>
+      <div className="corner-4"></div>
     </div>
   );
 };

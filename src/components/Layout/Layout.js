@@ -6,6 +6,7 @@ import Pentagon from '../Pentagon/Pentagon';
 import GameButtons from '../GameButtons/GameButtons';
 import GameContext from '../../context/gameContext';
 import Picked from '../Picked/Picked';
+import GameOverButton from '../GameOverButton/GameOverButton';
 const Layout = () => {
   const gameCTX = useContext(GameContext);
   console.log(gameCTX);
@@ -14,14 +15,15 @@ const Layout = () => {
       <ScoreCard />
       {gameCTX.isPlaying && (
         <GameButtons
-          lizard={gameCTX.pickedLizard}
-          scissors={gameCTX.pickedScissors}
-          paper={gameCTX.pickedPaper}
-          spock={gameCTX.pickedSpock}
-          rock={gameCTX.pickedRock}
+          lizard={gameCTX.pickedLizard || gameCTX.housePickedLizard}
+          scissors={gameCTX.pickedScissors || gameCTX.housePickedScissors}
+          paper={gameCTX.pickedPaper || gameCTX.housePickedPaper}
+          spock={gameCTX.pickedSpock || gameCTX.housePickedSpock}
+          rock={gameCTX.pickedRock || gameCTX.housePickedRock}
           location="gameOver"
         />
       )}
+      {gameCTX.isPlaying && <GameOverButton />}
       {gameCTX.isPlaying && <Picked />}
       {!gameCTX.isPlaying && (
         <GameButtons lizard scissors paper spock rock location="pick" />

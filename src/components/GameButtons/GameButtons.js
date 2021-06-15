@@ -13,6 +13,8 @@ import {
   spock_pick,
   scissors_pick,
   player_game__over,
+  house_game__over,
+  winner_animation,
 } from './GameButtons.module.css';
 import lizardImage from '../../assets/icon-lizard.svg';
 import paperImage from '../../assets/icon-paper.svg';
@@ -28,8 +30,12 @@ const GameButtons = ({ lizard, scissors, paper, spock, rock, location }) => {
         key="5"
         onClick={() => gameCTX.playerPicked('pickedLizard')}
         className={`${lizard_styles} ${location === 'pick' && lizard_pick} ${
-          location === 'gameOver' && player_game__over
-        }`}
+          gameCTX.pickedLizard && player_game__over
+        } ${gameCTX.housePickedLizard && house_game__over} ${
+          gameCTX.pickedLizard && gameCTX.isPlayerWinner && winner_animation
+        } ${
+          gameCTX.isHouseWinner && gameCTX.housePickedLizard && winner_animation
+        } `}
       >
         <img src={lizardImage} alt="lizard button" />
       </div>
@@ -39,8 +45,14 @@ const GameButtons = ({ lizard, scissors, paper, spock, rock, location }) => {
     buttons.push(
       <div
         key="4"
-        // onClick={() => startGameHandler('rock')}
-        className={`${rock_styles} ${location === 'pick' && rock_pick}`}
+        onClick={() => gameCTX.playerPicked('pickedRock')}
+        className={`${rock_styles} ${location === 'pick' && rock_pick} ${
+          gameCTX.housePickedRock && house_game__over
+        } ${gameCTX.pickedRock && gameCTX.pickedRock && player_game__over}  ${
+          gameCTX.isPlayerWinner && winner_animation
+        } ${
+          gameCTX.isHouseWinner && gameCTX.housePickedRock && winner_animation
+        } `}
       >
         {' '}
         <img src={rockImage} alt="rock button" />
@@ -51,8 +63,14 @@ const GameButtons = ({ lizard, scissors, paper, spock, rock, location }) => {
     buttons.push(
       <div
         key="3"
-        // onClick={() => startGameHandler('paper')}
-        className={`${paper_styles} ${location === 'pick' && paper_pick}`}
+        onClick={() => gameCTX.playerPicked('pickedPaper')}
+        className={`${paper_styles} ${location === 'pick' && paper_pick} ${
+          gameCTX.housePickedPaper && house_game__over
+        } ${gameCTX.pickedPaper && gameCTX.pickedPaper && player_game__over}  ${
+          gameCTX.isPlayerWinner && winner_animation
+        } ${
+          gameCTX.isHouseWinner && gameCTX.housePickedPaper && winner_animation
+        }`}
       >
         <img src={paperImage} alt="paper button" />
       </div>
@@ -62,8 +80,14 @@ const GameButtons = ({ lizard, scissors, paper, spock, rock, location }) => {
     buttons.push(
       <div
         key="2"
-        // onClick={() => startGameHandler('spock')}
-        className={`${spock_styles} ${location === 'pick' && spock_pick}`}
+        onClick={() => gameCTX.playerPicked('pickedSpock')}
+        className={`${spock_styles} ${location === 'pick' && spock_pick} ${
+          gameCTX.housePickedSpock && house_game__over
+        } ${gameCTX.pickedSpock && player_game__over}  ${
+          gameCTX.pickedSpock && gameCTX.isPlayerWinner && winner_animation
+        } ${
+          gameCTX.isHouseWinner && gameCTX.housePickedSpock && winner_animation
+        }`}
       >
         {' '}
         <img src={spockImage} alt="spock button" />
@@ -74,8 +98,18 @@ const GameButtons = ({ lizard, scissors, paper, spock, rock, location }) => {
     buttons.push(
       <div
         key="1"
-        // onClick={() => startGameHandler('scissors')}
-        className={`${scissors_styles} ${location === 'pick' && scissors_pick}`}
+        onClick={() => gameCTX.playerPicked('pickedScissors')}
+        className={`${scissors_styles} ${
+          location === 'pick' && scissors_pick
+        } ${gameCTX.housePickedScissors && house_game__over} ${
+          gameCTX.pickedScissors && player_game__over
+        }  ${
+          gameCTX.pickedScissors && gameCTX.isPlayerWinner && winner_animation
+        } ${
+          gameCTX.isHouseWinner &&
+          gameCTX.housePickedScissors &&
+          winner_animation
+        }`}
       >
         {' '}
         <img src={scissorsImage} alt="scissors button" />
