@@ -48,8 +48,8 @@ const GameButtons = ({ lizard, scissors, paper, spock, rock, location }) => {
         onClick={() => gameCTX.playerPicked('pickedRock')}
         className={`${rock_styles} ${location === 'pick' && rock_pick} ${
           gameCTX.housePickedRock && house_game__over
-        } ${gameCTX.pickedRock && gameCTX.pickedRock && player_game__over}  ${
-          gameCTX.isPlayerWinner && winner_animation
+        } ${gameCTX.pickedRock && player_game__over}  ${
+          gameCTX.isPlayerWinner && gameCTX.pickedRock && winner_animation
         } ${
           gameCTX.isHouseWinner && gameCTX.housePickedRock && winner_animation
         } `}
@@ -66,8 +66,8 @@ const GameButtons = ({ lizard, scissors, paper, spock, rock, location }) => {
         onClick={() => gameCTX.playerPicked('pickedPaper')}
         className={`${paper_styles} ${location === 'pick' && paper_pick} ${
           gameCTX.housePickedPaper && house_game__over
-        } ${gameCTX.pickedPaper && gameCTX.pickedPaper && player_game__over}  ${
-          gameCTX.isPlayerWinner && winner_animation
+        } ${gameCTX.pickedPaper && player_game__over}  ${
+          gameCTX.isPlayerWinner && gameCTX.pickedPaper && winner_animation
         } ${
           gameCTX.isHouseWinner && gameCTX.housePickedPaper && winner_animation
         }`}

@@ -66,6 +66,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
+    left: 33%;
+    top: 20%;
+    position: absolute;
   }
 }
