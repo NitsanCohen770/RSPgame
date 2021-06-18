@@ -62,6 +62,7 @@
     display: none;
   }
   .pentagon {
+    position: relative;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -69,5 +70,8 @@
     left: 33%;
     top: 20%;
     position: absolute;
+  }
+  .mobile {
+    display: none;
   }
 }

@@ -150,32 +150,32 @@
 @media (min-width: 768px) {
   .lizard_pick {
     width: 60px;
-    left: 38%;
-    top: 80%;
+    left: 0%;
+    top: 70%;
     height: 60px;
   }
   .paper_pick {
     width: 60px;
-    left: 59%;
-    top: 50%;
+    left: 80%;
+    top: 33%;
     height: 60px;
   }
   .rock_pick {
     width: 60px;
-    left: 55%;
-    top: 80%;
+    left: 67%;
+    top: 70%;
     height: 60px;
   }
   .scissors_pick {
     width: 60px;
-    left: 46%;
-    top: 30%;
+    left: 37%;
+    top: 8%;
     height: 60px;
   }
   .spock_pick {
     width: 60px;
-    left: 33%;
-    top: 50%;
+    left: -10%;
+    top: 33%;
     height: 60px;
   }
   .player_game__over {

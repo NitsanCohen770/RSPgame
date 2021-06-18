@@ -25,10 +25,12 @@ const Layout = () => {
       )}
       {gameCTX.isPlaying && <GameOverButton />}
       {gameCTX.isPlaying && <Picked />}
+
       {!gameCTX.isPlaying && (
-        <GameButtons lizard scissors paper spock rock location="pick" />
+        <Pentagon>
+          <GameButtons lizard scissors paper spock rock location="pick" />
+        </Pentagon>
       )}
-      {!gameCTX.isPlaying && <Pentagon />}
       <RulesButton />
     </>
   );
